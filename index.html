@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <div id="head">
+                 <p>UNIT CONVERTER</p>
+            </div>
+
+
+            <div id="output_panel">
+                <div class="output_item">Weight: <span id="output_weight">—</span></div>
+                <div class="output_item">Temperature: <span id="output_temp">—</span></div>
+            </div>
+
+            <section class="converter" id="weight-converter">
+                <h3>Weight</h3>
+                <input type="number" id="weight_input" placeholder="Enter value" step="any">
+                <div class="row">
+                    <select  id="from_weight">
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="g">Gram (g)</option>
+                        <option value="lb">Pound (lb)</option>
+                        <option value="oz">Ounce (oz)</option>
+                    </select>
+
+                    <select id="to_weight">
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="g">Gram (g)</option>
+                        <option value="lb">Pound (lb)</option>
+                        <option value="oz">Ounce (oz)</option>
+                    </select>
+                </div>
+                <button id="convert_weight">Convert Weight</button>
+                <div class="result"><span id="weight_result"></span></div>
+            </section>
+
+            <section class="converter" id="temp-converter">
+                <h3>Temperature</h3>
+                <input type="number" id="temp_input" placeholder="Enter value" step="any">
+                <div class="row">
+                    <select id="from_temp">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+
+                    <select id="to_temp">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                </div>
+                <button id="convert_temp">Convert Temperature</button>
+                <div class="result"><span id="temp_result"></span></div>
+            </section>
+
+        </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
